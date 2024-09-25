@@ -3,17 +3,14 @@ import './Header.css'
 
 
 
-const Header = () => {
+const Header = () => { //this is the header component that will be rendered in the App component
 
     return (
 
-        <>
-           
-                <h1>Marquel Davis</h1>
-                <NavBar />
-        </>
-
-
+        <div className='topPage'>
+            <h1 class='name'>Joe Brown</h1>
+            <NavBar />
+        </div>
     )
 
 }
