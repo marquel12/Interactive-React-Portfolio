@@ -1,7 +1,22 @@
-<Header>
-
-    <h1>Helllo World </h1>
-
+import NavBar from "./NavBar"
+import './Header.css'
 
 
-</Header>
+
+const Header = () => {
+
+    return (
+
+        <>
+           
+                <h1>Marquel Davis</h1>
+                <NavBar />
+        </>
+
+
+    )
+
+}
+
+
+export default Header 

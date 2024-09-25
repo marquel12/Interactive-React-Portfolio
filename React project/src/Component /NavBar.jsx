@@ -1,23 +1,32 @@
 
-export function NavTabs() {
-// const currentPage = useLocation().pathname;
- 
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+import React from 'react';
+import { NavLink} from 'react-router-dom';
+// get Nav.css style from 
 
+
+
+const NavBar = () => {
+    return (
+        <nav>
+
+            <ul>
+                <li>
+                    <NavLink to="/About">About </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Portfolio">Portfolio</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Contact">Contact</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/Resume">Resume</NavLink>
+                </li>
+
+            </ul>
+        </nav>
+    )
 }
 
 
-export default NavTabs
+export default NavBar 
