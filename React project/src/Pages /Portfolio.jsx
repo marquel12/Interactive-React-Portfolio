@@ -1,4 +1,6 @@
 import Project from "../Component /Project";
+import './Project.css'
+
 
 
 export default function Portfolio() {
@@ -54,7 +56,7 @@ export default function Portfolio() {
 
 
     return (
-      <div>
+      <div className="container">
         <h2 className='projectTitle'>My Projects</h2>
         <div className="d-flex flex-wrap items-center justify-content-center">
           {

@@ -8,7 +8,7 @@ const Project = ({ project }) => {
 
   return (
 
-    <Card style={{ width: '33rem', margin: 7 }}>
+    <Card style={{ width: '30rem', margin: 7 }}>
       <Card.Img variant="top" src={url} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
