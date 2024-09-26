@@ -12,21 +12,9 @@
     height:100px;
 }
 
-    }
 
 
-nav{ 
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    padding: 1rem 2rem;
-    background-color: #475841;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    height:100px;
-    }
+
 
 nav ul{
     display: flex;
@@ -47,7 +35,7 @@ nav ul li a{
     position: sticky;   
    
     
-}
+} 
 
 .name {
     display: flex;

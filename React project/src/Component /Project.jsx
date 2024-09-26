@@ -4,11 +4,11 @@ import Card from 'react-bootstrap/Card';
 
 
 const Project = ({ project }) => {
-  const { name, url, description } = project
+  const { name, url, description } = project // this is the object destructuring of the project object
 
   return (
 
-    <Card style={{ width: '18rem', margin: 5 }}>
+    <Card style={{ width: '33rem', margin: 7 }}>
       <Card.Img variant="top" src={url} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
