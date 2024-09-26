@@ -7,10 +7,10 @@ const Header = () => { //this is the header component that will be rendered in t
 
     return (
 
-        <div className='topPage'>
-            <h1 class='name'>Joe Brown</h1>
+        <header className='topPage'>
+            <h1 class='name'>Marquel Davis </h1>
             <NavBar />
-        </div>
+        </header>
     )
 
 }
