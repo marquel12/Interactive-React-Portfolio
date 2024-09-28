@@ -40,7 +40,7 @@ const [error, setError] = useState('')
           <label className='labels'>
             Name
           </label>
-          <input type='text' value={name} onChange={(e)=>setName(e.target.value)} placeholder="'John" />
+          <input type='text' value={name} onChange={(e)=>setName(e.target.value)} placeholder="John" />
           
         </div>
         <br></br>
@@ -55,7 +55,7 @@ const [error, setError] = useState('')
           <label className='labels'>
             Message
           </label>
-          <textarea value={message}onChange={(e)=>setMessage(e.target.value)} placeholder="Hello"/>
+          <textarea value={message}onChange={(e)=>setMessage(e.target.value)} placeholder="Message Me :)"/>
         </div>
         {error && <p style={{color:'red'}}> {error} </p> }
       <button type='submit' className='btn'>Submit</button>
