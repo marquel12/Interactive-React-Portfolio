@@ -1,0 +1,41 @@
+
+
+.projectTitle{
+    text-align: center;
+}
+
+
+
+
+.img{
+    border-radius: 2%;
+ 
+}
+
+
+
+.card{
+    display: flex;
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px #475841;;
+    padding: 10px;
+    border: 1px solid black;
+   
+   
+}
+
+.card:hover{
+    background-color: #3F403F;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+
+

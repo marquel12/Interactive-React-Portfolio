@@ -1,21 +1,67 @@
+import { useState } from "react";
+import './Contact.css' 
+
 export default function Contact() {
-    return (
-      <div>
-        <h2>Contact Page</h2>
-        <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-        </p>
-      </div>
-    );
-  }
+
+const [name,setName] = useState('')
+const [email,setEmail] = useState('')
+const [message,setMessage] = useState('')
+const [error, setError] = useState('')
+
+
+  const handleSubmit = (e)=>{
+    e.preventDefault()
+    if (email === ''){
+     setError('Email is required')
+     return
+      
+    }
+    if(!name){
+      setError ('Name is required')
+      return
+    }
+    if(!message){
+      setError ('Message is required')
+      return
+    }
+    setError('')
+    console.log("Form submitted",{name,email,message})
   
+  }
+
+
+
+  return (
+    <div className='form'>
+      <h2>Contact Page</h2>
+
+      <form  onSubmit={handleSubmit} className='form-container'>
+        <div>
+          <label className='labels'>
+            Name
+          </label>
+          <input type='text' value={name} onChange={(e)=>setName(e.target.value)} placeholder="John" />
+          
+        </div>
+        <br></br>
+        <div>
+          <label className='labels'>
+            Email Address
+          </label>
+          <input type='email' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="johndoe@gmail.com"/>
+        </div>
+        <br></br>
+        <div>
+          <label className='labels'>
+            Message
+          </label>
+          <textarea value={message}onChange={(e)=>setMessage(e.target.value)} placeholder="Message Me :)"/>
+        </div>
+        {error && <p style={{color:'red'}}> {error} </p> }
+      <button type='submit' className='btn'>Submit</button>
+        
+
+      </form>
+    </div>
+  );
+}
