@@ -41,7 +41,7 @@ a:hover {
 nav ul li a {
     text-decoration: none;
     padding: 0.5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
     position: sticky;   
    
@@ -60,7 +60,7 @@ nav ul li a {
 
     h2  {
         font-size: 2rem; /* Large title */
-        color: #3F403F /* Dark text color */
+        color: #3F403F; /* Dark text color */
         text-align: left; /* Center the text */
         padding:1rem;
         margin: 0; /* Remove the margin */

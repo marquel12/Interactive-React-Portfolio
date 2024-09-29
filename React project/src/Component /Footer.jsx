@@ -1,19 +1,24 @@
+import { VscGithub } from "react-icons/vsc";
 import './Footer.css'
+import { FaLinkedin } from "react-icons/fa";
+const Footer = () => {
 
-const Footer = () =>{
-    return(
+
+    return (
         <footer className="footers">
-           <div>
-                Hello
+            <div className="logo">
+                <a href="https://www.linkedin.com/in/marqueld/">
+                    <FaLinkedin size={30} />
+                </a>
 
-              
+                <a href="https://github.com/marquel12">
+                    <VscGithub size={30} /></a>
+            </div>
 
-
-           </div>
         </footer>
     )
-        
-    
+
+
 }
 
 
