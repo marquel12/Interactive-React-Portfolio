@@ -68,7 +68,7 @@ export default function Portfolio() {
       <div className="container">
         <h2 className='projectTitle'><b>CHECK OUT MY PROJECTS</b></h2>
        
-        <div className="justify-content-center">
+        <div className= 'port'>
           {
             projectArray.map(projectparams=>( //this is the map function that will iterate through the projectArray and return a Project component for each project
               <Project project={projectparams} /> //this is the Project component that will be rendered for each project

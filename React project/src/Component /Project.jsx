@@ -12,7 +12,7 @@ const Project = ({ project }) => {
 
   return (
 
-    <Card style={{ width: '30rem', padding:'5px' }} className='card'>
+    <Card style={{ width: '50rem', padding:'5px',  }} className='card'>
       <Card.Img variant="top" src={url}  className='img'/>
 
       <Card.Body>

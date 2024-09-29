@@ -1,8 +1,26 @@
 
-
-/* 
 .footers{
- background-color: aqua;
- display:flex;
-justify-content: space-around;
-} */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#475841;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 0px #475841
+
+
+
+
+  
+   
+   
+    
+   
+  
+
+}
